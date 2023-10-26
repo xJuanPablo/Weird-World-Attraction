@@ -1,3 +1,4 @@
+import React, { Component } from 'react';
 import Button from 'react-bootstrap/Button';
 import Container from 'react-bootstrap/Container';
 import Form from 'react-bootstrap/Form';
@@ -5,28 +6,29 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
+import Logo from './Logo';
 
-function NavBar() {
-  return (
-    <>
-        <Navbar expand={'md'} className="bg-body-tertiary mb-3">
+export default class NavBar extends Component {
+  render() {
+    return (
+      <section>
+        <Navbar expand={'md'} fixed="top" className="bg-body-tertiary navigation">
           <Container fluid>
-            <Navbar.Brand href="#">Navbar Offcanvas</Navbar.Brand>
+            <Logo />
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
             <Navbar.Offcanvas
-              id={`offcanvasNavbar-expand-md`}
               aria-labelledby={`offcanvasNavbarLabel-expand-md`}
               placement="end"
             >
               <Offcanvas.Header closeButton>
                 <Offcanvas.Title id={`offcanvasNavbarLabel-expand-${'md'}`}>
-                  Offcanvas
+                  User Context for name
                 </Offcanvas.Title>
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Home</Nav.Link>
-                  <Nav.Link href="#action2">Link</Nav.Link>
+                  <Nav.Link href="#action1">Login</Nav.Link>
+                  <Button variant="outline-dark" size='sm'>Sign Up</Button>
                   <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-md`}
@@ -35,6 +37,7 @@ function NavBar() {
                     <NavDropdown.Item href="#action4">
                       Another action
                     </NavDropdown.Item>
+
                     <NavDropdown.Divider />
                     <NavDropdown.Item href="#action5">
                       Something else here
@@ -54,8 +57,7 @@ function NavBar() {
             </Navbar.Offcanvas>
           </Container>
         </Navbar>
-    </>
-  );
+      </section>
+    );
+  }
 }
-
-export default NavBar
