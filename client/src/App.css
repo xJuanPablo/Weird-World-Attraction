@@ -1,0 +1,22 @@
+
+.App {
+  text-align: initial;
+  height: 100vh;
+  background-color: #f2f2f2;
+}
+
+.navigation{
+  position: sticky;
+  z-index: 2;
+  top: 0;
+}
+
+.carousel_div{
+  position: relative;
+  z-index: 1;
+}
+
+.hero_img{
+  width: 100%;
+  filter: brightness(45%);
+}
