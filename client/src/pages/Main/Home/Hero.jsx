@@ -42,6 +42,7 @@ function Hero() {
           </Carousel.Item>
         ))}
       </Carousel>
+        <h2 className='Hero-h2'>Where Normal Ends, Our <span className='explore'>Exploration</span>  Begins</h2>
     </div>
   )
 }
