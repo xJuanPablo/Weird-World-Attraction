@@ -5,7 +5,6 @@
 }
 
 body {
-  height: 300vh;
   width: 100vw;
   margin: 0;
   padding: 0;
@@ -22,7 +21,7 @@ body {
 @media only screen and (max-width: 767px){
   .logo_words{
     font-family: 'Calistoga', serif;
-    font-size: 29px;
+    font-size: 25px;
     margin: 0 auto;
   }
 }
@@ -62,3 +61,102 @@ body {
   padding: 10px;
 }
 
+/*! Styling for footer */
+
+/* Styling for footer divider */
+.footer-divider{
+  margin: 0 auto;
+  width: 88%;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 20px;
+}
+
+/* info section of footer */
+.footer-info{
+  width: 100%;
+  display: flex;
+  margin-top: 5%;
+}
+
+.footer-info-link-container{
+  display: inline-block;
+  width: 50%;
+  justify-content: center;
+}
+
+.footer-info-h6{
+  text-align: center;
+}
+
+.footer-info-links{
+  list-style: none;
+  text-align: center;
+  padding: 0;
+}
+
+.footer-info-links li{
+  margin-bottom: 3%;
+}
+
+@media only screen and (max-width: 500px){
+  .footer-info{
+    width: 90%;
+    display: block;
+    margin: 0 auto;
+    margin-top: 5%;
+  }
+  .footer-info-link-container{
+    display: block;
+    width: 100%;
+  }
+  .footer-info-h6{
+    text-align: start;
+    width: 90%;
+    margin: 0 auto;
+    margin-bottom: 2%;
+  }
+  .footer-info-links{
+    list-style: none;
+    text-align:center;
+  }
+  .footer-info-links li{
+    display: inline-block;
+    margin: 2% 3% 5% 3%;
+  }
+}
+
+/* Styling for connect links */
+.footer-connect-container{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.footer-connect-links{
+  display: flex;
+  list-style: none;
+  padding: 0;
+  width: 80%;
+}
+
+.footer-connect-links li{
+  width: 33%;
+  text-align: center;
+  transition: all .2s ease-in-out;
+  margin-top: 10px;
+}
+
+.footer-connect-links li:hover{
+  transform: scale(1.2); 
+}
+
+.footer-connect-links li a{
+  color: black;
+}
+
+/*Styling for copyright */
+.footer-h6{
+  text-align: center;
+  margin-top: 14px;
+  font-size: 16px;
+}
