@@ -28,7 +28,6 @@ export default function Footer() {
             <li>Contact</li>
             <li>About</li>
             <li>Repository</li>
-            <li>Recommend an Oddity</li>
           </ul>
         </div>
         <div className='footer-info-link-container'>
