@@ -36,7 +36,7 @@ function Hero() {
       <Carousel interval={3500} fade>
         {images.map(({id, pic, alt}) => (
           <Carousel.Item key={id}>
-            <img src={pic} alt={alt} class="hero_img"/>
+            <img src={pic} alt={alt} className="hero_img"/>
             <Carousel.Caption>
             </Carousel.Caption>
           </Carousel.Item>
