@@ -3,6 +3,39 @@ import {AiFillGithub, AiFillLinkedin} from "react-icons/ai";
 import {CgWebsite} from "react-icons/cg";
 
 export default function Footer() {
+
+  const information =[
+    {
+      id: 0,
+      listItem: 'Contact',
+      link: '/contact'
+    },{
+      id: 1,
+      listItem: 'About',
+      link: '/about'
+    },{
+      id: 2,
+      listItem: 'Repository',
+      link: 'https://github.com/xJuanPablo/Weird-World-Attraction'
+    }
+  ]
+
+  const myAccount =[
+    {
+      id: 0,
+      listItem: 'Sign Out',
+      link: '/'
+    },{
+      id: 1,
+      listItem: 'My Oddities',
+      link: '/'
+    },{
+      id: 2,
+      listItem: 'My Reviews',
+      link: '/'
+    },
+  ]
+
   const connect =[
     {
       id: 0,
@@ -17,7 +50,7 @@ export default function Footer() {
       icon: <CgWebsite size={55}/>,
       link: 'https://pablos-tech-tide.com/'
     }
-  ]
+  ];
   return (
     <footer>
       <hr className='footer-divider'/>
@@ -25,17 +58,17 @@ export default function Footer() {
         <div className='footer-info-link-container'>
           <h5 className='footer-info-h6'>Information</h5>
           <ul className='footer-info-links'>
-            <li>Contact</li>
-            <li>About</li>
-            <li>Repository</li>
+            {information.map(({id, listItem, link }) => (
+              <li key={id}><a href={link}>{listItem}</a></li>
+            ))}
           </ul>
         </div>
         <div className='footer-info-link-container'>
           <h5 className='footer-info-h6'>My Account</h5>
           <ul className='footer-info-links'>
-            <li>Sign Out</li>
-            <li>My Oddities</li>
-            <li>My Reviews</li>
+            {myAccount.map(({id, listItem, link }) => (
+              <li key={id}><a href={link}>{listItem}</a></li>
+            ))}
           </ul>
         </div>
       </div>

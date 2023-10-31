@@ -1,10 +1,10 @@
 import React from 'react';
 import Carousel from 'react-bootstrap/Carousel';
-import cadillac from "../../../assets/images/one.png";
-import troll from "../../../assets/images/two.png";
-import EiffelTower from "../../../assets/images/three.png";
-import ToiletArt from "../../../assets/images/four.png";
-import BAndJ from "../../../assets/images/five.png";
+import cadillac from "../../assets/images/one.png";
+import troll from "../../assets/images/two.png";
+import EiffelTower from "../../assets/images/three.png";
+import ToiletArt from "../../assets/images/four.png";
+import BAndJ from "../../assets/images/five.png";
 
 function Hero() {
   const images= [

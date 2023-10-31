@@ -1,5 +1,7 @@
-import './App.css';
-import Home from './pages/Main/Home/Home';
+import './assets/styles/App.css';
+import './assets/styles/About.css'
+import Home from './pages/Home/HomePage.jsx';
+import About from './pages/About/About';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import {Routes, Route} from 'react-router-dom';
 
@@ -14,10 +16,10 @@ function App() {
       <div>register</div>
       }/>
       <Route path={'/contact'} element={
-      <div>contact</div>
+      <About />
       }/>
       <Route path={'/about'} element={
-      <div>about</div>
+      <About />
       }/>
     </Routes>
   );

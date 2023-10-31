@@ -1,5 +1,5 @@
 import React from 'react';
-import PC from '../../../assets/images/PC.png'
+import PC from '../../assets/images/PC.png'
 
 
 function TopAttractions() {
