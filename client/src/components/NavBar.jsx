@@ -27,8 +27,8 @@ export default class NavBar extends Component {
               </Offcanvas.Header>
               <Offcanvas.Body>
                 <Nav className="justify-content-end flex-grow-1 pe-3">
-                  <Nav.Link href="#action1">Login</Nav.Link>
-                  <Button variant="outline-dark" size='sm'>Sign Up</Button>
+                  <Nav.Link href="/login">Login</Nav.Link>
+                  <Nav.Link href="/register">Register</Nav.Link>
                   <NavDropdown
                     title="Dropdown"
                     id={`offcanvasNavbarDropdown-expand-md`}
