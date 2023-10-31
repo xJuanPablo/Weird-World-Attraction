@@ -6,7 +6,6 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import Offcanvas from 'react-bootstrap/Offcanvas';
-import Logo from './Logo';
 
 export default class NavBar extends Component {
   render() {
@@ -14,7 +13,9 @@ export default class NavBar extends Component {
       <section>
         <Navbar expand={'md'} fixed="top" className="bg-body-tertiary navigation">
           <Container fluid>
-            <Logo />
+            <a href="/" className='logo_words'>
+            <h1>Weird World Attractions</h1>
+            </a>
             <Navbar.Toggle aria-controls={`offcanvasNavbar-expand-md`} />
             <Navbar.Offcanvas
               aria-labelledby={`offcanvasNavbarLabel-expand-md`}
