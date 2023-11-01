@@ -1,0 +1,44 @@
+.slected-attraction-div{
+  margin-top: 12vh;
+}
+
+.attraction-h2{
+  text-align: center;
+  font-size: 57px;
+  margin-bottom: 5px;
+}
+
+.attraction-location{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.attraction-img-container{
+  width: 94%;
+  margin: 0 auto;
+  margin-bottom: 39px;
+}
+
+.attraction-img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.hours-of-operation-container,
+.attraction-description-container{
+  width: 91%;
+  margin: 0 auto;
+}
+
+.attraction-description{
+  font-size: 22px;
+}
+
+
+.hours-of-operation{
+  font-weight: 900;
+}
+
+.hours-of-operation-span{
+  color: rgb(125, 187, 142);
+}
