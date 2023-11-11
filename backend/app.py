@@ -19,6 +19,16 @@ app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
 db = SQLAlchemy(app)
 
+class Attraction(db.Model):
+  id = db.Column(db.Integer, primary_key=True)
+  name = db.Column(db.String(100))
+  address = db.Column(db.String(100))
+  description = db.Column(db.Text) 
+  picture_url = db.Column(db.String(255))
+  hours =  db.Column(db.Integer)
+  likes = db.Column(db.Integer)
+  reviews = db.Column(db.Text) 
+
 # This is defining a route that executes the get_articles() function 
 # methods = ['GET']: specifies that this route should respond to HTTP GET requests
 @app.route('/', methods = ['GET'])
